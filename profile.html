@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Library Management System</title>
+<style>
+body{background-image:url('background.jpg');}
+#top{background-image:url('ban.jpg');width:99.5%;color:yellow;margin:auto;height:120px;border:1px solid black;}
+h1{font-family:arial;margin-left:10px;text-shadow:5px 5px 5px black;}
+#div1list{list-style:none;margin-left:20%;}
+.title1{float:left;}
+
+#left{width:200px;height:auto;position:absolute;left:10px;margin-top:20px;border:2px solid black;}
+
+
+#center{margin:20px 5px 5px 220px;width:*;height:auto;border:1px solid black;}
+
+.menulist a{font-size:25px;font-family:arial;display:block;background-color:black;margin:5px;padding:4px;text-align:center;color:white;text-decoration:none;text-shadow:2px 2px black;}
+
+.menulist a:hover{background-color:wheat;color:black;text-shadow:1px 1px 1px black;}
+</style>
+<script>
+
+function lpis()
+{
+var profilename=(document.URL).substring( (document.URL).indexOf("?") + 1 );
+checkthis(profilename);
+}
+window.onload=lpis;
+function checkthis(nam)
+{
+document.getElementById("welcomename").innerHTML="Welcome "+nam;
+//////add more names and values here///////////////
+if(nam=="pradeep")
+{
+document.getElementById("tname").innerHTML="Pradeep Lanka";
+document.getElementById("tclass").innerHTML="4/5 Msse";
+document.getElementById("troll").innerHTML="27";
+document.getElementById("tlibcard").innerHTML="310506402027";
+document.getElementById("tbgroup").innerHTML="b+";
+document.getElementById("tresidence").innerHTML="DayScholar";
+document.getElementById("pic").src="pics/pradeep.png";
+}
+else if(nam=="sarat")
+{
+document.getElementById("tname").innerHTML="Sarat Lakamana";
+document.getElementById("tclass").innerHTML="4/5 Msse";
+document.getElementById("troll").innerHTML="26";
+document.getElementById("tlibcard").innerHTML="310506402026";
+document.getElementById("tbgroup").innerHTML="ab+";
+document.getElementById("tresidence").innerHTML="Hosteller";
+document.getElementById("pic").src="pics/sarath.jpg";
+}
+else if(nam=="praveen")
+{
+document.getElementById("tname").innerHTML="Praveen Kurapati";
+document.getElementById("tclass").innerHTML="4/5 Msse";
+document.getElementById("troll").innerHTML="24";
+document.getElementById("tlibcard").innerHTML="310506402024";
+document.getElementById("tbgroup").innerHTML="0+";
+document.getElementById("tresidence").innerHTML="Hosteller";
+document.getElementById("pic").src="pics/praveen.png";
+}
+
+else{alert("error");}
+}
+</script>
+</head>
+
+
+<body>
+<div id="top">
+<ul id="div1list">
+<li class="title1"> <img src="titleicon.png" height="100px" width="100px"/></li>
+<li class="title1"><h1>Library Management System</h1></li>
+</ul>
+</div>
+
+<div id="left">
+<ul id="menu" style="list-style:none;margin:0;padding:0;">
+<li class="menulist"><a href="home.html">Home</a></li>
+<li class="menulist"><a href="abooks.html">Available Books</a></li>
+<li class="menulist"><a href="login.html">Logout</a></li>
+
+</ul>
+
+</div>
+
+<div id="center">
+<p id="welcomename"></p>
+<h2 style="text-align:center">--Your Profile--</h2>
+<div style="margin-left:300px;">
+<table border="1" width="500px">
+<tr>
+<td><h3 >Name:</h3></td>
+<td><p id="tname" style="padding:5px;">pradeep</p></td>
+<td rowspan="3" ><p style="text-align:center;"><img id="pic" src="titleicon.png" alt="oops" height="150" width="150"/></p></td>
+</tr>
+
+<tr>
+<td><h3 >Class:</h3></td>
+<td><p id="tclass" style="padding:5px;">pradeep</p></td>
+</tr>
+
+<tr>
+<td><h3 >Roll num:</h3></td>
+<td><p id="troll" style="padding:5px;">pradeep</p></td>
+</tr>
+<tr>
+<td><h3 >Lib Card num:</h3></td>
+<td><p id="tlibcard" style="padding:5px;">pradeep</p></td>
+</tr>
+
+<tr>
+<td><h3 >Blood group</h3></td>
+<td><p id="tbgroup" style="padding:5px;">pradeep</p></td>
+</tr>
+<tr>
+<td><h3 >residence</h3></td>
+<td><p id="tresidence" style="padding:5px;">pradeep</p></td>
+</tr>
+
+</table>
+
+
+</div>
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>

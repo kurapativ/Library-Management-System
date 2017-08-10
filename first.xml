@@ -1,0 +1,10 @@
+<vehicles>
+<car>
+<price>399</price>
+<color>black</color>
+</car>
+<bikes>
+<price>3333</price>
+<color>black</color>
+</bikes>
+</vehicles>
